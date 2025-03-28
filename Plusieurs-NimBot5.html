@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="Css/Plusieurs-NimBot.css">
+<link rel="stylesheet" href="Css/Menu.css">
+<title>Jeu de Nim</title>
+
+<body style="background-color:gray;">
+    <div id="myNav" class="overlay">
+        <a class="croix" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a class="menu" href="Index.html">Jeu de Nim</a>
+            <a class="menu" href="Tutoriel5.html">Partie Libre</a>
+            <a class="menu" href="Avec-NimBot5.html">Partie avec 1 robot</a>
+            <a class="menu" href="Plusieurs-NimBot5.html">Partie avec plusieurs robot</a>
+        </div>
+  
+    </div>
+
+    <span onclick="openNav()"><img src="Image/menu-burger.png" alt="Menu Burger" width=70 height=70 title="Mon menu burger"></span>
+
+    <div class="popup">
+        <h2>NimBot et ses frères</h2>
+        <p>
+            Une difficulté en plus ! NimBot a été rejoint par ses 4 frères. Ils sont numérotés et vont jouer à tour de role en fonction de leur numéro (4 allumettes restantes = robot numéro 4).
+        </p>
+        <img src="Image/NimBot.png" alt="Nimbot" title="NimBot">
+        <a class="bleu"><button class="pointe" id="close">D'accord</button></a>
+    </div>
+	
+	<div class="titre" style = "position:absolute; left:80px; top:0%;">
+		<p>Jeu de Nim</p>
+    </div>
+
+    <div style="position:absolute; left:29%; top:25%;">
+        <img src="Image/allumette.png" alt="Mon allumette" title="Mon allumette">
+    </div>
+
+    <div style="position:absolute; left:39%; top:25%;">
+        <img src="Image/allumette.png" alt="Mon allumette" title="Mon allumette">
+    </div>
+
+    <div style="position:absolute; left:49%; top:25%;">
+        <img src="Image/allumette.png" alt="Mon allumette" title="Mon allumette">
+    </div>
+
+    <div style="position:absolute; left:59%; top:25%;">
+        <img src="Image/allumette.png" alt="Mon allumette" title="Mon allumette">
+    </div>
+
+    <div style="position:absolute; left:69%; top:25%;">
+        <img src="Image/allumette.png" alt="Mon allumette" title="Mon allumette">
+    </div>
+
+    <div class="NimBot1" style = "position:absolute; left:17%; top: 60%;">
+        <img src="Image/NimBot1.png" alt="Nimbot1" title="NimBot1">
+    </div>
+
+    <div class="Combien1" style = "position:absolute; left:15%; top: 75%;">
+        <a class="gris"><button class="repos">Pas lui !</button></a>
+    </div>
+
+    <div class="NimBot2" style = "position:absolute; left:32%; top: 60%;">
+        <img src="Image/NimBot2.png" alt="Nimbot2" title="NimBot2">
+    </div>
+
+    <div class="Combien2" style = "position:absolute; left:30%; top: 75%;">
+        <a class="gris"><button class="repos">Pas lui !</button></a>
+    </div>
+
+    <div class="NimBot3" style = "position:absolute; left:47%; top: 60%;">
+        <img src="Image/NimBot3.png" alt="Nimbot3" title="NimBot3">
+    </div>
+
+    <div class="Combien3" style = "position:absolute; left:45%; top: 75%;">
+        <a class="gris"><button class="repos">Pas lui !</button></a>
+    </div>
+
+    <div class="NimBot4" style = "position:absolute; left:62%; top: 60%;">
+        <img src="Image/NimBot4.png" alt="Nimbot4" title="NimBot4">
+    </div>
+
+    <div class="Combien4" style = "position:absolute; left:60%; top: 75%;">
+        <a class="gris"><button class="repos">Pas lui !</button></a>
+    </div>
+
+    <div class="NimBot5" style = "position:absolute; left:77%; top: 60%;">
+        <img src="Image/NimBot5.png" alt="Nimbot5" title="NimBot5">
+    </div>
+
+    <div class="Combien5" style = "position:absolute; left:75%; top: 75%;">
+        <a href="Plusieurs-NimBot3.html" class="bleu"><button class="pointe">Combien ?</button></a>
+    </div>
+
+    <div class="titre" style="position: absolute; left:31%; top:85%">
+    	<p>Clique sur le bon Nimbot pour lui demander ce qu'il veut faire.</p>
+    </div>
+
+    <!--Script-->
+    <script type="text/javascript">
+        window.addEventListener("load", function(){
+            setTimeout(
+                function open(event){
+                    document.querySelector(".popup").style.display = "block";
+                    document.querySelector(".Combien1").style.display = "none";
+                    document.querySelector(".Combien2").style.display = "none";
+                    document.querySelector(".Combien3").style.display = "none";
+                    document.querySelector(".Combien4").style.display = "none";
+                    document.querySelector(".Combien5").style.display = "none";
+                },
+                0 
+            )
+        });
+        document.querySelector("#close").addEventListener("click", function(){
+            document.querySelector(".popup").style.display = "none";
+        });
+        document.querySelector(".NimBot1").addEventListener("click", function(){
+            document.querySelector(".Combien1").style.display = "block";
+        });
+        document.querySelector(".NimBot2").addEventListener("click", function(){
+            document.querySelector(".Combien2").style.display = "block";
+        });
+        document.querySelector(".NimBot3").addEventListener("click", function(){
+            document.querySelector(".Combien3").style.display = "block";
+        });
+        document.querySelector(".NimBot4").addEventListener("click", function(){
+            document.querySelector(".Combien4").style.display = "block";
+        });
+        document.querySelector(".NimBot5").addEventListener("click", function(){
+            document.querySelector(".Combien5").style.display = "block";
+        });
+        function openNav() {
+            document.getElementById("myNav").style.width = "20%";
+        }
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="Css/Page_Accueil.css">
+<link rel="stylesheet" href="Css/Menu.css">
+<title>Jeu de Nim</title>
+
+<body>
+	<div id="myNav" class="overlay">
+		<a class="croix"  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+			<a href="Index.html">Jeu de Nim</a>
+			<a href="Tutoriel5.html">Partie Libre</a>
+	  		<a href="Avec-NimBot5.html">Partie avec 1 robot</a>
+	  		<a href="Plusieurs-NimBot5.html">Partie avec plusieurs robot</a>
+		</div>
+  
+  	</div>
+
+  	<span onclick="openNav()"><img src="Image/menu-burger.png" alt="Menu Burger" width=70 height=70 title="Mon menu burger"></span>
+
+	<div style = "position:absolute; left:80px; top:0%;">
+		<p>Jeu de Nim</p>
+    </div>
+
+    <div style = "position:absolute; left:30%; top:22%;">
+		<p>Bienvenue ! <br><br> Nous te proposons ici d'apprendre à jouer au jeu de Nim <br> en utilisant une méthode facile avec des robots. <br><br> Nous mettons à ta disposition 4 étapes en fonction de ton <br> niveau, de la découverte des bases du jeu à la difficulté <br> d'une partie avec 4 robots. <br><br> Une explication des règles est disponible lors de la 1ère étape. Lors <br> de la 4ème, la notion de "stratégie gagnante" rentre en jeu et tu <br> apprendra alors à améliorer ton robot pour développer la <br> meilleure stratégie possible.</p>
+    </div>
+
+    <div style = "position:absolute; left:42%; top:80%">
+    	<a href="Tutoriel5.html">
+    		<img src="Image/bouton.png" alt="Bouton de démarrage" width=200 height=70 title="Mon bouton de démarrage">
+    	</a>
+    </div>
+
+    <script>
+    	function openNav() {
+    		document.getElementById("myNav").style.width = "20%";
+		}
+		function closeNav() {
+			document.getElementById("myNav").style.width = "0%";
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="Css/Avec-NimBot.css">
+<link rel="stylesheet" href="Css/Menu.css">
+<title>Jeu de Nim</title>
+
+<body style="background-color:gray;">
+    <div id="myNav" class="overlay">
+        <a class="croix" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a class="menu" href="Index.html">Jeu de Nim</a>
+            <a class="menu" href="Tutoriel5.html">Partie Libre</a>
+            <a class="menu" href="Avec-NimBot5.html">Partie avec 1 robot</a>
+            <a class="menu" href="Plusieurs-NimBot5.html">Partie avec plusieurs robot</a>
+        </div>
+  
+    </div>
+
+    <span onclick="openNav()"><img src="Image/menu-burger.png" alt="Menu Burger" width=70 height=70 title="Mon menu burger"></span>
+
+	<div class="titre" style = "position:absolute; left:80px; top:0%;">
+		<p>Jeu de Nim</p>
+    </div>
+
+    <div class="titre" style = "position:absolute; left:35%; top:10%;">
+        <p>NimBot a enlevé 1 allumette ! Il en reste 4.</p>
+    </div>
+
+    <div style="position:absolute; left:29%; top:25%;">
+        <img src="Image/allumette.png" alt="Mon allumette" title="Mon allumette">
+    </div>
+
+    <div style="position:absolute; left:39%; top:25%;">
+        <img src="Image/allumette.png" alt="Mon allumette" title="Mon allumette">
+    </div>
+
+    <div style="position:absolute; left:49%; top:25%;">
+        <img src="Image/allumette.png" alt="Mon allumette" title="Mon allumette">
+    </div>
+
+    <div style="position:absolute; left:59%; top:25%;">
+        <img src="Image/allumette.png" alt="Mon allumette" title="Mon allumette">
+    </div>
+
+    <div style="position:absolute; left:69%; top:25%;">
+        <img src="Image/allumette-noire.png" alt="Mon allumette" title="Mon allumette">
+    </div>
+
+    <div style = "position:absolute; left:47%; top: 60%;">
+        <img src="Image/NimBot.png" alt="Nimbot" title="NimBot">
+    </div>
+
+	<div style = "position:absolute; left:45%; top:80%">
+    	<a class="bleu" href="Avec-NimBot1.html"><button class="pointe" id="close">Combien ?</button></a>
+    </div>
+
+    <div class="titre" style="position: absolute; left:39%; top:90%">
+    	<p>Demande à Nimbot ce qu'il veut faire.</p>
+    </div>
+
+    <!--Script-->
+    <script type="text/javascript">
+        function openNav() {
+            document.getElementById("myNav").style.width = "20%";
+        }
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+</body>
+</html>

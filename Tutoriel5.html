@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="Css/Tutoriel.css">
+<link rel="stylesheet" href="Css/Menu.css">
+<title>Jeu de Nim</title>
+
+<body style="background-color:gray;">
+    <div id="myNav" class="overlay">
+        <a class="croix" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a class="menu" href="Index.html">Jeu de Nim</a>
+            <a class="menu" href="Tutoriel5.html">Partie Libre</a>
+            <a class="menu" href="Avec-NimBot5.html">Partie avec 1 robot</a>
+            <a class="menu" href="Plusieurs-NimBot5.html">Partie avec plusieurs robot</a>
+        </div>
+  
+    </div>
+
+    <span onclick="openNav()"><img src="Image/menu-burger.png" alt="Menu Burger" width=70 height=70 title="Mon menu burger"></span>
+
+    <div class="popup">
+        <h2>Règles</h2>
+        <p>
+            Initialement il y a un tas d'un certain nombre d'objets (par exemple 5 allumettes). Tour à tour un joueur enlève 1, 2, ou 3 objets. Le joueur qui prend le dernier objet a perdu.
+        </p>
+        <a class="bleu"><button class="pointe" id="close">J'ai compris</button></a>
+    </div>
+    <!--Script-->
+    <script type="text/javascript">
+    	window.addEventListener("load", function(){
+    		setTimeout(
+    			function open(event){
+    				document.querySelector(".popup").style.display = "block";
+    			},
+    			0 
+    		)
+    	});
+		document.querySelector("#close").addEventListener("click", function(){
+    		document.querySelector(".popup").style.display = "none";
+		});
+    </script>
+	
+	<div class="titre" style = "position:absolute; left:80px; top:0%;">
+		<p>Jeu de Nim</p>
+    </div>
+
+    <div style="position:absolute; left:29%; top:35%;">
+        <img src="Image/allumette.png" alt="Mon allumette" title="Mon allumette">
+    </div>
+
+    <div style="position:absolute; left:39%; top:35%;">
+        <img src="Image/allumette.png" alt="Mon allumette" title="Mon allumette">
+    </div>
+
+    <div style="position:absolute; left:49%; top:35%;">
+        <img src="Image/allumette.png" alt="Mon allumette" title="Mon allumette">
+    </div>
+
+    <div style="position:absolute; left:59%; top:35%;">
+        <img src="Image/allumette.png" alt="Mon allumette" title="Mon allumette">
+    </div>
+
+    <div style="position:absolute; left:69%; top:35%; width:;">
+        <img src="Image/allumette.png" alt="Mon allumette" title="Mon allumette">
+    </div>
+
+    <div style = "position:absolute; left:20%; top:80%">
+    	<a class="bleu" href="Tutoriel4.html"><button class="pointe">1 allumette</button></a>
+    </div>
+
+	<div style = "position:absolute; left:45%; top:80%">
+    	<a class="bleu" href="Tutoriel3.html"><button class="pointe">2 allumettes</button></a>
+    </div>
+
+	<div style = "position:absolute; left:70%; top:80%">
+    	<a class="bleu" href="Tutoriel2.html"><button class="pointe">3 allumettes</button></a>
+    </div>
+
+    <div class="titre" style="position: absolute; left:35%; top:90%">
+    	<p>Choisis le nombre d'allumettes que tu vas prendre.</p>
+    </div>
+    
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "20%";
+        }
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+</body>
+</html>
