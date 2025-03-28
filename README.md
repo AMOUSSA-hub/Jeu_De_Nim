@@ -1,3 +1,3 @@
-## Tutoriel Jeu de Nim : Stratégie gagnante  
+## Tutoriel Jeu de Nim : Stratégie gagnante (SAE BUT1)
 
-Site nous explicant la stratégie gagnante du jeu de Nim.
+Site d'initiation à la stratégie gagnante du jeu de Nim.
